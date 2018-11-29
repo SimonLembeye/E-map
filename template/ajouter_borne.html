@@ -1,0 +1,47 @@
+<div>
+    <div class="forms">
+        <div class="input-group row">
+            <label class="col-sm-4 col-xs-12" for="adresse">Adresse</label>
+            <input class="col-sm-8 col-xs-12 form-control" id="adresse" type="text" placeholder="Adresse" aria-describedby="basic-addon1"></input>
+            <button class="btn btn-info" id="myLocation" onclick="proposer_adresse()">Ma position</button>
+        </div>
+
+
+        <div class="input-group row mt-2">
+            <label class="col-sm-4 col-xs-12" for="prix">Prix</label>
+            <input class="col-sm-8 col-xs-12 form-control" id="prix" type="text" placeholder="Prix" aria-describedby="basic-addon1"></input>
+            <i class="col-sm-8 col-xs-12 form-control">Mettre 0 si gratuit</i>
+        </div>
+
+        <div class="form-group row mt-2">
+          <label class="col-sm-4 col-xs-12" for="type">Type de Prise</label>
+          <select id="type" class="form-control col-sm-8 col-xs-12">
+            <option selected="selected" value="1">WPA</option>
+            <option value="2">CR45</option>
+            <option value="3">PlugEasy</option>
+          </select>
+        </div>
+
+        <div class="form-group row mt-2">
+          <label class="col-sm-4 col-xs-12" for="etat">Etat</label>
+          <select id="etat" class="form-control col-sm-8 col-xs-12">
+            <option selected="selected" value="1">Neuve</option>
+            <option value="2">Très bon état</option>
+            <option value="3">Bon état</option>
+            <option value="4">Passable</option>
+            <option value="5">Mauvais état</option>
+          </select>
+        </div>
+
+        <div class="form-group row mt-2">
+          <label class="col-sm-4 col-xs-12" for="statut">Statut</label>
+          <select id="statut" class="form-control col-sm-8 col-xs-12">
+            <option selected="selected" value="1">Public</option>
+            <option value="2">Privée</option>
+          </select>
+        </div>
+
+        <button type="submit" id="ajout_borne" class="mt-2 btn btn-success btn-block btn-large" onclick="ajouterBorne()">Ajouter la borne</button>
+    </div>
+
+</div>

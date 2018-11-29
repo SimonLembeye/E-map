@@ -1,0 +1,37 @@
+<div>
+    <h2> Modifier profil </h2>
+
+   <div class="input-group row">
+       <label class="col-sm-4 col-xs-12" for="email">Email</label>
+       <input class="col-sm-8 col-xs-12 form-control" id="email" type="text" placeholder="Email" aria-describedby="basic-addon1"></input>
+   </div>
+
+   <div class="input-group row">
+       <label class="col-sm-4 col-xs-12" for="nom">Nom</label>
+       <input class="col-sm-8 col-xs-12 form-control" id="nom" type="text" placeholder="Nom" aria-describedby="basic-addon1"></input>
+   </div>
+
+
+   <div class="input-group row">
+       <label class="col-sm-4 col-xs-12" for="prenom">Prenom</label>
+       <input class="col-sm-8 col-xs-12 form-control" id="prenom" type="text" placeholder="Prenom" aria-describedby="basic-addon1"></input>
+   </div>
+
+   <div class="form-group row mt-2">
+     <label class="col-sm-4 col-xs-12" for="borne">Type de Prise</label>
+     <select id="borne" class="form-control col-sm-8 col-xs-12">
+       <option value="1">WPA</option>
+       <option value="2">CR45</option>
+       <option value="3">PlugEasy</option>
+     </select>
+   </div>
+
+   <div class="input-group row">
+       <label class="col-sm-4 col-xs-12" for="password">Password</label>
+       <input class="col-sm-8 col-xs-12 form-control" id="password" type="password" placeholder="Password" aria-describedby="basic-addon2"></input>
+   </div>
+
+    <button type="submit" id="modif_profil" class="btn btn-primary btn-block btn-large" onclick="modifierProfil()">Modifer le profil</button>
+
+
+</div>

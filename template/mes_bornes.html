@@ -1,0 +1,75 @@
+<div>
+
+  <div id="mes_bornes">
+    <h4 class="mb-2 text-center mt-5">Mes bornes</h4>
+    <p class="ml-2">Nombre de bornes enregistrées sur le réseau : <span class="font-weight-bold">{{length}}</span></p>
+    {{#.}}
+        <div class="card bg-light mb-2 mx-2" style="width: 100%">
+          <div class="card-header">{{adresse}}</div>
+          <div class="card-body">
+            <p class="card-text">Type : {{type}}</p>
+            <p class="card-text">Prix <i>(€/kWh)</i> : {{prix}}</p>
+            <p class="card-text">{{statut}}</p>
+            <p class="card-text">{{etat}}</p>
+            <a class="btn btn-primary btn-sm" onclick="findTheBorne({{id}}, preremplir_form)">Modifier Borne</a>
+            <a class="btn btn-danger btn-sm" onclick="supprimer({{id}})">Supprimer la borne</a>
+          </div>
+        </div>
+      {{/.}}
+      <p class="text-center"><a href="#ajouterborne">Ajouter une nouvelle borne</a></p>
+  </div>
+
+  <div id="form_modif">
+      <div class="forms">
+        <h4 class="text-center mt-5">Modifier la borne</h4>
+          <div class="input-group row">
+              <label class="col-sm-4 col-xs-12" for="m_adresse">Adresse</label>
+              <input class="col-sm-8 col-xs-12 form-control" id="m_adresse" type="text" placeholder="Adresse" aria-describedby="basic-addon1"></input>
+          </div>
+
+
+          <div class="input-group row mt-2">
+              <label class="col-sm-4 col-xs-12" for="m_prix">Prix</label>
+              <input class="col-sm-8 col-xs-12 form-control" id="m_prix" type="text" placeholder="Prix" aria-describedby="basic-addon1"></input>
+              <i class="col-sm-8 col-xs-12 form-control">Mettre 0 si gratuit</i>
+          </div>
+
+          <div class="form-group row mt-2">
+            <label class="col-sm-4 col-xs-12" for="m_type">Type de Prise</label>
+            <select id="m_type" class="form-control col-sm-8 col-xs-12">
+              <option selected="selected" value="1">WPA</option>
+              <option value="2">CR45</option>
+              <option value="3">PlugEasy</option>
+            </select>
+          </div>
+
+          <div class="form-group row mt-2">
+            <label class="col-sm-4 col-xs-12" for="m_etat">Etat</label>
+            <select id="m_etat" class="form-control col-sm-8 col-xs-12">
+              <option selected="selected" value="1">Neuve</option>
+              <option value="2">Très bon état</option>
+              <option value="3">Bon état</option>
+              <option value="4">Passable</option>
+              <option value="5">Mauvais état</option>
+            </select>
+          </div>
+
+          <div class="form-group row mt-2">
+            <label class="col-sm-4 col-xs-12" for="m_statut">Statut</label>
+            <select id="m_statut" class="form-control col-sm-8 col-xs-12">
+              <option selected="selected" value="1">Public</option>
+              <option value="2">Privée</option>
+            </select>
+          </div>
+
+          <input id="m_id" style="display: none;"></input>
+
+          <button type="submit" id="modification" class="mt-2 btn btn-primary btn-block btn-large" onclick="modifierBorne()">Modifier la borne</button>
+
+          <a class="btn btn-sm btn-info mt-2" onclick="faire_apparaitre_mes_bornes()">Voir mes bornes</a>
+      </div>
+
+  </div>
+
+
+</div>
