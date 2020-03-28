@@ -1,8 +1,8 @@
 # E-map
 
-## Partie client d'une application colaborative de recensement de bornes de recharges pour voitures éléctriques 
+## Client side of a colaborative application for the identification of charging stations for electric cars. 
 
-* Partie serveur en php avec Oauth2
-* Partie client avec jquery, ajax, mustachejs
+* Server side in PHP with Oauth2
+* Client side with jquery, ajax, mustachejs
 
-Projet réalisé avec Jules Delemotte dans le cadre du modal Smartphones et Tablettes de l'école Polytechnique.
+Project carried out with Jules Delemotte as part of the modal Smartphones and Tablets of the Ecole Polytechnique.
